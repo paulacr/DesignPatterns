@@ -1,0 +1,16 @@
+***Factory***
+
+*Definition*
+
+- Used when a method return one of several possible classes that share
+a common super class
+- The class is chosen at runtime
+
+
+*Usages*
+- when you don't know ahead of time which object / class you will need
+- when all the possible classes are in the same subclass level
+- To make the code centralized in one place
+- When you want to avoid user to know all classes that don't need
+- to encapsulate the object creation
+

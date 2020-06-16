@@ -1,0 +1,10 @@
+*** Strategy ***
+Used when we want to apply same action but different strategies for each object.
+
+
+// Examples to apply Strategy pattern in Android
+
+1 - When you want to show Different theme
+(colors of components and views styles) in the same view,
+or in a list with multiple view types
+
