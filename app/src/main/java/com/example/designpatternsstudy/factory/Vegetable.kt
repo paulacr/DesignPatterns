@@ -9,10 +9,10 @@ abstract class Vegetable {
     abstract var name: String
 
     fun prepareFood() {
-        Log.i("Preparing $name", "will take $timeOfPreparation minutes")
+        Log.i("Factory Pattern ", "Preparing $name will take $timeOfPreparation minutes")
     }
 
     fun saveConsumedCalories() {
-        Log.i("Saving calories", "meal calories consumed $calories calories")
+        Log.i("Factory Pattern", "Saving $calories calories in the system")
     }
 }
