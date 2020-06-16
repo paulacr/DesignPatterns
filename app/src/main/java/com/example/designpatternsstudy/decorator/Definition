@@ -1,0 +1,8 @@
+*** Decorator Pattern ***
+
+* Definition *
+- Allows to modify objects at runtime
+- Used most when you want the capabilities of inheritance with subclasses
+- It's more flexible than inheritance
+- Simplifies code
+- Rather than rewrite old code you can extend with the new code

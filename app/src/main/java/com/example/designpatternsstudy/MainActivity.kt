@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.designpatternsstudy.abstractfactory.FactoryGenerator
+import com.example.designpatternsstudy.decorator.PizzaMaker
 import com.example.designpatternsstudy.factory.VegetableFactory
 import com.example.designpatternsstudy.strategy.*
 import com.example.designpatternsstudy.strategy.interfaces.Candidate
@@ -19,6 +20,7 @@ class MainActivity: AppCompatActivity() {
         executeFactoryPattern()
         executeStrategyPattern()
         executeAbstractFactoryPattern()
+        executeDecoratorPattern()
     }
 
     private fun executeFactoryPattern() {
@@ -40,6 +42,13 @@ class MainActivity: AppCompatActivity() {
         val breadFactory = FactoryGenerator().getFactory("BRE")
         val bread = breadFactory?.getBread("BRI")
         Log.i("Abstract Factory P.", "Bread name ${bread?.name()}")
+    }
+
+    private fun executeDecoratorPattern() {
+        val pizza = PizzaMaker().getPizza()
+        Log.i("Decorator pattern", "pizza description: ${pizza.getDescription()}")
+        Log.i("Decorator pattern", "pizza cost: ${pizza.getCost()}")
+
     }
 
 }
